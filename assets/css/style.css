@@ -1,4 +1,11 @@
 
+.container {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    margin: 0 auto;
+    color: rgb(85, 74, 9);
+}
+
 .crystals {
     display: flex;
     justify-content: space-around;
@@ -11,4 +18,20 @@
     border:1px solid white;
     height: 200px;
     width: 200px; 
+}
+
+.jumbotron {
+    text-align: center;
+    background-image: url("https://i0.wp.com/www.titanui.com/wp-content/uploads/2013/06/10/3D-Abstract-Crystal-Background-Vector.jpg");
+    color: rgb(223, 200, 139);
+    text-decoration: underline;
+}
+
+
+
+.crystal:hover {
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.5);
+    transform:translate(5px,80px);
+    cursor: pointer;
+    transition: box-shadow 1s, transform 2s;
 }

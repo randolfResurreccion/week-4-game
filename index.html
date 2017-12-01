@@ -1,33 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Crystal Game</title>
-    <script
-    src="https://code.jquery.com/jquery-3.2.1.min.js"
-    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-    crossorigin="anonymous"></script>
-    
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    
-   
-  
+
+
 </head>
+
 <body>
-   <h1>Crystal Game</h1>
+    <div class="container">
+    <div class="jumbotron">
+        <h1>Crystal Game</h1>
+    </div>
+
     
-   <div id="number-to-guess">Number to Guess: </div>
-   <div id="wins">Wins:</div>
-   <div id="loses">Loses:</div>
-   <div id="userNumber">Number: </div>
+        <div class="row">
+            <div id="number-to-guess" class="col-md-6">Number to Guess: </div>
+            <div id="userNumber" class="col-md-6">Number: </div>
+        </div>
 
-   <div class="crystals">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="crystals"></div>
+            </div>
+        </div>
 
-   </div>
+        <div class="row">
+            <div id="wins" class="col-md-6">Wins: </div>
+            <div id="loses" class="col-md-6">Loses: </div>
+        </div>
+
+    </div>
 
 
-   <script src="assets/javascript/game.js"></script>
+
+    </div>
+    <script src="assets/javascript/game.js"></script>
 </body>
+
 </html>
